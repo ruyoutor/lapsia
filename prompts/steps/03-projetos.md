@@ -1,0 +1,1 @@
+Crie projetos.html listando áreas (ex.: saúde mental, neuropsicologia, psicologia social) com cards: descrição curta, integrantes (placeholder), links para materiais (placeholders). Prepare estrutura de subpágina de projeto genérica (projeto-modelo.html) com seção para objetivos, cronograma, equipe e materiais. Baseie-se no item “Áreas de Atuação / Projetos”.

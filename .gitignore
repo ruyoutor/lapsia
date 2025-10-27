@@ -1,0 +1,11 @@
+# IDE
+.idea/
+.vscode/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Saídas/rascunhos
+out/
+dist/

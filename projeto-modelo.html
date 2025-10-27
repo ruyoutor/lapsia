@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modelo de Projeto | LAPsiA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1d4ed8',
+              secondary: '#e0f2fe',
+              navy: '#0f172a',
+            },
+            fontFamily: {
+              display: ['Poppins', 'Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body bg-secondary/40 text-navy">
+    <a
+      href="#conteudo"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded"
+      >Pular para o conteúdo</a
+    >
+    <header class="bg-white/90 backdrop-blur border-b border-primary/10 sticky top-0 z-50">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html#home" class="flex items-center gap-3">
+          <img loading="lazy" src="img.png" alt="Logotipo LAPsiA" class="h-12 w-12 rounded-full border border-primary/20 object-cover" />
+          <span class="font-display text-lg font-semibold text-primary">LAPsiA</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <ul class="flex flex-wrap items-center gap-2 text-sm font-medium text-primary">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+            <li><a href="projetos.html" class="nav-link nav-link-active" aria-current="page">Projetos</a></li>
+            <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+            <li><a href="materiais.html" class="nav-link">Materiais</a></li>
+            <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+            <li><a href="linha-do-tempo.html" class="nav-link">Linha do Tempo</a></li>
+            <li><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+            <li><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="pb-16">
+      <section class="bg-gradient-to-br from-white via-secondary/40 to-white">
+        <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+          <span class="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Template LAPsiA</span>
+          <h1 class="mt-4 font-display text-4xl font-semibold text-navy sm:text-5xl">Modelo de projeto</h1>
+          <p class="mt-6 text-base text-navy/80">
+            Copie este layout para documentar novas frentes da liga. Substitua os placeholders por informações reais antes de divulgar a página ao público.
+          </p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-6 py-16 space-y-12">
+        <article class="rounded-3xl border border-primary/10 bg-white p-8 shadow-sm">
+          <h2 class="font-display text-3xl font-semibold text-navy">Objetivos</h2>
+          <p class="mt-4 text-sm text-navy/80">
+            Descreva o propósito central do projeto, metas específicas e resultados esperados. Utilize tópicos para objetivos gerais e indicadores quando necessário.
+          </p>
+          <ul class="mt-6 list-disc space-y-2 pl-6 text-sm text-navy/80">
+            <li><strong>Objetivo Geral:</strong> Inserir resumo do impacto pretendido.</li>
+            <li><strong>Objetivos Específicos:</strong> Listar entre 2 e 4 metas mensuráveis.</li>
+            <li><strong>Indicadores:</strong> Definir métricas de acompanhamento (participantes, produções, atendimentos).</li>
+          </ul>
+        </article>
+
+        <article class="rounded-3xl border border-primary/10 bg-white p-8 shadow-sm">
+          <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <div class="max-w-xl">
+              <h2 class="font-display text-3xl font-semibold text-navy">Cronograma</h2>
+              <p class="mt-4 text-sm text-navy/80">
+                Organize fases, prazos e checkpoints. Ajuste a tabela conforme a duração do projeto.
+              </p>
+            </div>
+            <a href="#" class="hidden rounded-full border border-primary/30 px-4 py-2 text-xs font-semibold text-primary transition hover:border-primary hover:text-navy">
+              Anexar cronograma detalhado
+            </a>
+          </div>
+          <div class="mt-6 overflow-x-auto">
+            <table class="min-w-full table-auto border-separate border-spacing-y-2 text-sm text-navy/80">
+              <thead>
+                <tr class="text-left text-xs uppercase tracking-wide text-primary/70">
+                  <th class="rounded-l-xl bg-secondary/80 px-4 py-3">Fase</th>
+                  <th class="bg-secondary/80 px-4 py-3">Período</th>
+                  <th class="rounded-r-xl bg-secondary/80 px-4 py-3">Entregas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white shadow-sm">
+                  <td class="rounded-l-xl px-4 py-3 font-medium">Diagnóstico</td>
+                  <td class="px-4 py-3">Semana 1-2</td>
+                  <td class="rounded-r-xl px-4 py-3">Mapear demandas, definir participantes, validar bibliografia.</td>
+                </tr>
+                <tr class="bg-white shadow-sm">
+                  <td class="rounded-l-xl px-4 py-3 font-medium">Execução</td>
+                  <td class="px-4 py-3">Semana 3-10</td>
+                  <td class="rounded-r-xl px-4 py-3">Realizar encontros, registrar atividades, monitorar indicadores.</td>
+                </tr>
+                <tr class="bg-white shadow-sm">
+                  <td class="rounded-l-xl px-4 py-3 font-medium">Síntese</td>
+                  <td class="px-4 py-3">Semana 11-12</td>
+                  <td class="rounded-r-xl px-4 py-3">Compartilhar resultados, ajustar materiais, planejar próximas etapas.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-primary/10 bg-white p-8 shadow-sm">
+          <h2 class="font-display text-3xl font-semibold text-navy">Equipe</h2>
+          <p class="mt-4 text-sm text-navy/80">
+            Liste responsáveis, funções e canais de contato. Use fotos ou ícones conforme disponibilidade.
+          </p>
+          <div class="mt-6 grid gap-6 md:grid-cols-2">
+            <div class="rounded-2xl border border-primary/15 bg-secondary/60 p-5">
+              <h3 class="font-display text-lg font-semibold text-primary">Nome do(a) Coordenador(a)</h3>
+              <p class="text-sm text-navy/70">Coordenação Geral • contato@email.com</p>
+              <p class="mt-2 text-xs text-navy/60">Principais responsabilidades: descrição breve.</p>
+            </div>
+            <div class="rounded-2xl border border-primary/15 bg-secondary/60 p-5">
+              <h3 class="font-display text-lg font-semibold text-primary">Nome do(a) Facilitador(a)</h3>
+              <p class="text-sm text-navy/70">Facilitação de grupos • contato@email.com</p>
+              <p class="mt-2 text-xs text-navy/60">Principais responsabilidades: descrição breve.</p>
+            </div>
+            <div class="rounded-2xl border border-primary/15 bg-secondary/60 p-5">
+              <h3 class="font-display text-lg font-semibold text-primary">Nome do(a) Pesquisador(a)</h3>
+              <p class="text-sm text-navy/70">Pesquisa & Dados • contato@email.com</p>
+              <p class="mt-2 text-xs text-navy/60">Principais responsabilidades: descrição breve.</p>
+            </div>
+            <div class="rounded-2xl border border-primary/15 bg-secondary/60 p-5">
+              <h3 class="font-display text-lg font-semibold text-primary">Nome do(a) Comunicador(a)</h3>
+              <p class="text-sm text-navy/70">Comunicação • contato@email.com</p>
+              <p class="mt-2 text-xs text-navy/60">Principais responsabilidades: descrição breve.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-primary/10 bg-white p-8 shadow-sm">
+          <h2 class="font-display text-3xl font-semibold text-navy">Materiais & Evidências</h2>
+          <p class="mt-4 text-sm text-navy/80">
+            Centralize links para documentos, apresentações, formulários e registros audiovisuais. Utilize descrições curtas para cada recurso.
+          </p>
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <a href="#" class="rounded-2xl border border-primary/20 bg-secondary/70 p-5 text-sm font-semibold text-primary transition hover:border-primary hover:text-navy">
+              • Plano de aula / roteiro de encontro
+            </a>
+            <a href="#" class="rounded-2xl border border-primary/20 bg-secondary/70 p-5 text-sm font-semibold text-primary transition hover:border-primary hover:text-navy">
+              • Formulário de avaliação
+            </a>
+            <a href="#" class="rounded-2xl border border-primary/20 bg-secondary/70 p-5 text-sm font-semibold text-primary transition hover:border-primary hover:text-navy">
+              • Apresentação de resultados
+            </a>
+            <a href="#" class="rounded-2xl border border-primary/20 bg-secondary/70 p-5 text-sm font-semibold text-primary transition hover:border-primary hover:text-navy">
+              • Registro fotográfico/vídeo
+            </a>
+          </div>
+          <p class="mt-6 text-xs text-navy/60">
+            Observação: hospede documentos na pasta compartilhada da liga e mantenha permissões de visualização atualizadas.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bg-navy text-white">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-8 text-sm sm:flex-row">
+        <p>© <span id="year">2024</span> LAPsiA — Todos os direitos reservados.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-secondary transition">Instagram</a>
+          <a href="#" class="hover:text-secondary transition">LinkedIn</a>
+          <a href="#" class="hover:text-secondary transition">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

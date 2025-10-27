@@ -1,0 +1,1 @@
+Crie galeria.html com grid responsivo de 12 imagens placeholder (usando picsum.photos), lightbox simples (JS leve) e legendas curtas (evento, data). Baseado em “Galeria”.

@@ -1,0 +1,75 @@
+⸻
+
+Estrutura sugerida do site
+
+1. Página Inicial (Home)
+	•	Breve apresentação da liga (missão, visão, objetivos).
+	•	Destaque para próximas atividades/eventos.
+	•	Um banner ou imagem relacionada à psicologia/ciência/estudantes.
+
+⸻
+
+2. Sobre Nós
+	•	História da liga: quando foi fundada, motivação, objetivos gerais.
+	•	Equipe atual (diretoria, coordenação, membros) com fotos e funções.
+	•	Como funciona a participação (aberta a alunos, processo seletivo etc.).
+
+⸻
+
+3. Áreas de Atuação / Projetos
+	•	Espaço para listar grupos de pesquisa, projetos de extensão, campanhas sociais ou temáticas (ex.: saúde mental, neuropsicologia, psicologia social).
+	•	Cada área/projeto pode ter:
+	•	Descrição curta.
+	•	Integrantes envolvidos.
+	•	Links para materiais (artigos, relatórios, vídeos).
+
+⸻
+
+4. Eventos e Notícias
+	•	Agenda de atividades: palestras, simpósios, encontros, grupos de estudo.
+	•	Notícias sobre participação em congressos ou parcerias.
+	•	Espaço para inscrição em eventos (Google Forms ou similar).
+
+⸻
+
+5. Publicações e Materiais
+	•	Biblioteca digital com artigos, resumos de eventos, e-books produzidos pela liga.
+	•	Espaço para compartilhamento de cartilhas e materiais de conscientização (ex.: saúde mental em estudantes, prevenção ao suicídio).
+	•	Possibilidade de um blog com textos escritos pelos membros.
+
+⸻
+
+6. Galeria
+	•	Fotos e vídeos de eventos, palestras, campanhas e atividades comunitárias.
+
+⸻
+
+7. Contato
+	•	Formulário de contato (para tirar dúvidas, convidar para eventos etc.).
+	•	E-mail institucional.
+	•	Redes sociais (Instagram, LinkedIn, YouTube).
+
+⸻
+
+8. Área Exclusiva (opcional)
+	•	Login para membros da liga (pode ser algo simples, como Google Drive integrado).
+	•	Acesso a documentos internos, atas de reuniões, materiais de estudo.
+
+⸻
+
+Diferenciais que podem deixar o site mais atrativo
+	•	Calendário interativo (Google Calendar embutido).
+	•	Linha do tempo da liga (com marcos e conquistas).
+	•	Depoimentos de alunos/professores sobre a importância da liga.
+	•	Seção “Pergunte ao Psicólogo”: espaço para divulgar respostas a dúvidas frequentes (pode ser leve, sem caráter clínico).
+	•	Design clean e acessível: cores suaves, ícones relacionados à psicologia (cérebro, mente, equilíbrio).
+
+⸻
+
+Ferramentas que podem ajudar
+	•	WordPress ou Wix: fáceis para montar sem programar.
+	•	Notion + Super.so: simples e rápido para transformar em site.
+	•	Google Sites: gratuito e prático.
+	•	GitHub Pages + Hugo/Next.js: se quiser algo mais técnico e personalizável.
+
+⸻

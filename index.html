@@ -1,0 +1,206 @@
+<!--
+Checklist de publicação estática LAPsiA:
+1. Executar revisão visual local (abrir index.html em navegador) em desktop e mobile.
+2. Rodar linters: npx prettier --check "**/*.html" e npx markdownlint "**/*.md".
+3. Garantir links internos/externos atualizados; rodar npx markdown-link-check onde aplicável.
+4. Comprimir assets se for necessário (imagens otimizadas, sem arquivos órfãos).
+5. Gerar build/minificação (ex.: copiar HTML/CSS para dist/ com remoção de comentários).
+6. Publicar via GitHub Pages / Netlify apontando dist/ ou diretamente a raiz, conforme plataforma.
+7. Após deploy, validar em /index.html, /sobre.html, /projetos.html etc., verificando navegação.
+8. Configurar meta tags/opções de domínio conforme exigido pela hospedagem.
+9. Monitorar console do navegador por erros e ajustar se necessário.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LAPsiA | Liga Acadêmica de Psicologia Alcântara</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1d4ed8',
+              secondary: '#e0f2fe',
+              navy: '#0f172a',
+            },
+            fontFamily: {
+              display: ['Poppins', 'Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body bg-secondary/40 text-navy">
+    <a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded">Pular para o conteúdo</a>
+
+    <header class="bg-white/90 backdrop-blur border-b border-primary/10 sticky top-0 z-50">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#conteudo" class="flex items-center gap-3" aria-label="Ir para a seção inicial">
+          <img loading="lazy" src="img.png" alt="Logotipo LAPsiA" class="h-12 w-12 rounded-full border border-primary/20 object-cover" />
+          <span class="font-display text-lg font-semibold text-primary">LAPsiA</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <ul class="flex flex-wrap items-center gap-2 text-sm font-medium text-primary">
+            <li><a href="index.html#conteudo" class="nav-link nav-link-active" aria-current="page">Home</a></li>
+            <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+            <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+            <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+            <li><a href="materiais.html" class="nav-link">Materiais</a></li>
+            <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+            <li><a href="linha-do-tempo.html" class="nav-link">Linha do Tempo</a></li>
+            <li><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+            <li><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="pb-20">
+      <section class="bg-gradient-to-br from-white via-secondary/30 to-white">
+        <div class="mx-auto grid max-w-6xl gap-12 px-6 py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+          <div class="space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-primary">Liga Acadêmica de Psicologia Alcântara</span>
+            <h1 class="font-display text-4xl font-semibold text-navy sm:text-5xl">Conhecimento vivo para transformar pessoas e comunidades</h1>
+            <p class="text-base text-navy/80">
+              A LAPsiA conecta estudantes e professores em experiências acadêmicas, científicas e sociais que ressignificam a prática da psicologia. Aqui, teoria e campo caminham juntos para gerar impacto.
+            </p>
+            <p class="text-base text-navy/80">
+              Organizamos grupos de estudo, projetos comunitários, publicações e eventos que fortalecem a formação e ampliam o acesso a cuidado e informação. Nosso compromisso é aprender, compartilhar e agir com responsabilidade.
+            </p>
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a href="contato.html" class="btn-primary">Participe da LAPsiA</a>
+              <a href="projetos.html" class="btn-outline btn-sm">Conheça nossos projetos</a>
+            </div>
+          </div>
+          <div class="relative hidden lg:block">
+            <div class="absolute inset-0 rounded-3xl bg-primary/10 blur-2xl"></div>
+            <img loading="lazy" src="img.png" alt="Integrantes da LAPsiA durante atividade" class="relative z-10 w-full rounded-3xl border border-primary/15 object-cover shadow-[0_32px_80px_-40px_rgba(15,23,42,0.45)]" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-6 py-16">
+        <div class="space-y-6 text-center">
+          <h2 class="font-display text-3xl font-semibold text-navy">Sobre a liga</h2>
+          <p class="text-sm text-navy/80">
+            Somos estudantes e docentes da Universidade Estácio de Sá, Polo Alcântara, dedicados a expandir a formação em psicologia por meio de pesquisa, extensão e produção de conhecimento aberto. Acreditamos em um fazer científico humanizado, acessível e conectado às demandas do território.
+          </p>
+          <p class="text-sm text-navy/80">
+            Desde 2023, estruturamos frentes colaborativas que integram seminários, mentorias, ações comunitárias e publicações próprias. A cada semestre revisitamos nossas metas para garantir diversidade de temas, inclusão e impacto social concreto.
+          </p>
+          <p class="text-sm italic text-primary/90">“Na vida, não existe nada a temer, mas a entender.” — Marie Curie</p>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto max-w-6xl px-6 py-20">
+          <div class="mb-10 text-center">
+            <h2 class="font-display text-3xl font-semibold text-navy">Destaques em foco</h2>
+            <p class="mt-3 text-sm text-navy/70">Explore as principais frentes que movimentam a LAPsiA neste semestre.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <article class="card space-y-4">
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Projetos</p>
+                <h3 class="font-display text-xl font-semibold text-primary">Frentes colaborativas</h3>
+                <p class="text-sm text-navy/70">Grupos de estudo, intervenções comunitárias e pesquisas aplicadas em neuropsicologia, saúde mental e psicologia social.</p>
+              </div>
+              <a href="projetos.html" class="btn-outline btn-xs" aria-label="Ir para a página de projetos">Ver projetos</a>
+            </article>
+
+            <article class="card space-y-4">
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Eventos</p>
+                <h3 class="font-display text-xl font-semibold text-primary">Agenda em movimento</h3>
+                <p class="text-sm text-navy/70">Rodas de conversa, workshops e participações em congressos com inscrições abertas à comunidade acadêmica.</p>
+              </div>
+              <a href="eventos.html" class="btn-outline btn-xs" aria-label="Ir para a página de eventos">Ver agenda</a>
+            </article>
+
+            <article class="card space-y-4">
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Materiais</p>
+                <h3 class="font-display text-xl font-semibold text-primary">Biblioteca ativa</h3>
+                <p class="text-sm text-navy/70">Cartilhas, artigos, e-books e resumos com filtros rápidos para apoiar estudos e ações de extensão.</p>
+              </div>
+              <a href="materiais.html" class="btn-outline btn-xs" aria-label="Ir para a página de materiais">Acessar materiais</a>
+            </article>
+
+            <article class="card space-y-4">
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Galeria</p>
+                <h3 class="font-display text-xl font-semibold text-primary">Memórias e inspirações</h3>
+                <p class="text-sm text-navy/70">Registros de eventos e ações em campo com lightbox acessível e legendas contextualizadas.</p>
+              </div>
+              <a href="galeria.html" class="btn-outline btn-xs" aria-label="Ir para a página de galeria">Abrir galeria</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-20">
+        <div class="grid gap-10 rounded-3xl bg-primary/5 px-8 py-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div class="space-y-4">
+            <h2 class="font-display text-3xl font-semibold text-navy">Junte-se a uma rede que aprende fazendo</h2>
+            <p class="text-sm text-navy/80">
+              Participar da LAPsiA é mergulhar em ciclos colaborativos de estudo, produção científica, extensão e comunicação com a sociedade. Cada membro encontra espaço para propor ideias, desenvolver habilidades e construir impacto real.
+            </p>
+            <p class="text-sm text-navy/80">
+              Traga seu entusiasmo, suas perguntas e suas referências. Vamos planejar novas trilhas juntos.
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a href="contato.html" class="btn-primary">Participe da LAPsiA</a>
+              <a href="sobre.html" class="btn-outline btn-sm">Conheça nossa trajetória</a>
+            </div>
+          </div>
+          <div class="space-y-4 rounded-3xl bg-white p-6 shadow-[0_28px_60px_-45px_rgba(15,23,42,0.5)]">
+            <h3 class="font-display text-lg font-semibold text-primary">Por onde começar?</h3>
+            <ul class="space-y-3 text-sm text-navy/75">
+              <li>• Escreva para o e-mail oficial e receba o kit de acolhida com próximos encontros.</li>
+              <li>• Escolha uma frente de atuação alinhada ao seu interesse e combine expectativas.</li>
+              <li>• Documente aprendizados e compartilhe materiais para a biblioteca da liga.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy text-white">
+      <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <div class="space-y-2">
+          <p class="text-base font-semibold">LAPsiA — Liga Acadêmica de Psicologia Alcântara</p>
+          <p>Universidade Estácio de Sá · Polo Alcântara</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="sobre.html" class="btn-outline btn-xs">Sobre</a>
+          <a href="projetos.html" class="btn-outline btn-xs">Projetos</a>
+          <a href="contato.html" class="btn-outline btn-xs">Contato</a>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-secondary transition" aria-label="Instagram LAPsiA">Instagram</a>
+          <a href="#" class="hover:text-secondary transition" aria-label="LinkedIn LAPsiA">LinkedIn</a>
+          <a href="#" class="hover:text-secondary transition" aria-label="YouTube LAPsiA">YouTube</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10">
+        <p class="mx-auto max-w-6xl px-6 py-4 text-xs text-white/70">© <span id="year">2024</span> LAPsiA — Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

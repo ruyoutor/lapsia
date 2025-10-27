@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linha do Tempo | LAPsiA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1d4ed8',
+              secondary: '#e0f2fe',
+              navy: '#0f172a',
+            },
+            fontFamily: {
+              display: ['Poppins', 'Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              body: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body bg-secondary/40 text-navy">
+    <a
+      href="#conteudo"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded"
+      >Pular para o conteúdo</a
+    >
+    <header class="bg-white/90 backdrop-blur border-b border-primary/10 sticky top-0 z-50">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html#home" class="flex items-center gap-3">
+          <img loading="lazy" src="img.png" alt="Logotipo LAPsiA" class="h-12 w-12 rounded-full border border-primary/20 object-cover" />
+          <span class="font-display text-lg font-semibold text-primary">LAPsiA</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <ul class="flex flex-wrap items-center gap-2 text-sm font-medium text-primary">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+            <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+            <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+            <li><a href="materiais.html" class="nav-link">Materiais</a></li>
+            <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+            <li><a href="linha-do-tempo.html" class="nav-link nav-link-active" aria-current="page">Linha do Tempo</a></li>
+            <li><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+            <li><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="pb-16">
+      <section class="bg-gradient-to-br from-white via-secondary/40 to-white">
+        <div class="mx-auto max-w-6xl px-6 py-20">
+          <span class="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">História em Destaque</span>
+          <h1 class="mt-4 font-display text-4xl font-semibold text-navy sm:text-5xl">Linha do tempo LAPsiA</h1>
+          <p class="mt-6 max-w-3xl text-base text-navy/80">
+            Conheça os marcos que consolidaram a liga como referência em iniciativas acadêmicas e comunitárias na psicologia. Atualizamos esta linha do tempo a cada semestre.
+          </p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-16">
+        <div class="relative">
+          <div class="absolute left-4 top-0 h-full w-px bg-primary/20 sm:left-1/2"></div>
+          <div class="space-y-12">
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Julho 2023</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Fundação da LAPsiA</h2>
+                <p class="mt-2 text-sm text-navy/80">Estudantes e docentes se reúnem para estruturar a liga, definir objetivos e consolidar a primeira carta de princípios.</p>
+              </div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12"></div>
+            </article>
+
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12"></div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Agosto 2023</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Primeira Semana de Boas-Vindas</h2>
+                <p class="mt-2 text-sm text-navy/80">Mostra de projetos, feira de serviços e atividades culturais apresentam a liga aos novos estudantes.</p>
+              </div>
+            </article>
+
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Outubro 2023</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Campanha de Conscientização</h2>
+                <p class="mt-2 text-sm text-navy/80">A liga realiza mutirão em escolas públicas com rodas de conversa sobre saúde mental e cidadania.</p>
+              </div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12"></div>
+            </article>
+
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12"></div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Fevereiro 2024</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Participação em Congresso</h2>
+                <p class="mt-2 text-sm text-navy/80">Membros apresentam trabalhos no Congresso Fluminense de Psicologia, ampliando parcerias com outras instituições.</p>
+              </div>
+            </article>
+
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Março 2024</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Lançamento do Ciclo Autocuidado</h2>
+                <p class="mt-2 text-sm text-navy/80">Início de trilha formativa com leituras guiadas, podcasts e encontros quinzenais sobre bem-estar estudantil.</p>
+              </div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12"></div>
+            </article>
+
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12"></div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Abril 2024</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Expansão para novas frentes</h2>
+                <p class="mt-2 text-sm text-navy/80">Criação de grupos temáticos em neuropsicologia e psicologia social com dossiês documentados no repositório.</p>
+              </div>
+            </article>
+
+            <article class="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+              <div class="sm:w-1/2 sm:text-right sm:pr-12">
+                <p class="text-xs font-semibold uppercase tracking-wide text-primary/70">Junho 2024</p>
+                <h2 class="font-display text-2xl font-semibold text-primary">Lançamento da Biblioteca Digital</h2>
+                <p class="mt-2 text-sm text-navy/80">Materializa-se o acervo colaborativo com e-books, cartilhas e resumos hospedados no site.</p>
+              </div>
+              <div class="relative flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="sm:w-1/2 sm:pl-12"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy text-white">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-8 text-sm sm:flex-row">
+        <p>© <span id="year">2024</span> LAPsiA — Todos os direitos reservados.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-secondary transition">Instagram</a>
+          <a href="#" class="hover:text-secondary transition">LinkedIn</a>
+          <a href="#" class="hover:text-secondary transition">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('.timeline-dot').forEach((dot) => {
+        dot.classList.add(
+          'h-4',
+          'w-4',
+          'rounded-full',
+          'border-2',
+          'border-white',
+          'bg-primary',
+          'shadow-md'
+        );
+        dot.parentElement.classList.add('relative');
+        dot.setAttribute('aria-hidden', 'true');
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
